@@ -22,10 +22,10 @@ const App = () => {
       <CssBaseline/>
       <Navbar activeAdditionalFeatures={activeAdditionalFeatures}/>
       <Routes>
-        <Route path='/jk-meal-wheel-2023/' element={<Home pageName={`${appTitleLead}`} activeFeature={activeAdditionalFeatures}/>}/>
-        <Route path='/jk-meal-wheel-2023/edit-food' element={<FoodForm pageName={`${appTitleLead}- Edit Food Form`}/>}/>
-        <Route path='/jk-meal-wheel-2023/style-guide' element={<StyleGuide pageName={`${appTitleLead}- Style Guide`}/>}/>
-        <Route path='/jk-meal-wheel-2023/food-places/:id' element={<FoodPlaces pageName={`${appTitleLead}- Food Places`} />}/>
+        <Route path='/' element={<Home pageName={`${appTitleLead}`} activeFeature={activeAdditionalFeatures}/>}/>
+        <Route path='/edit-food' element={<FoodForm pageName={`${appTitleLead}- Edit Food Form`}/>}/>
+        <Route path='/style-guide' element={<StyleGuide pageName={`${appTitleLead}- Style Guide`}/>}/>
+        <Route path='/food-places/:id' element={<FoodPlaces pageName={`${appTitleLead}- Food Places`} />}/>
       </Routes>
       <Footer activeAdditionalFeatures={activeAdditionalFeatures}/>
     </>
