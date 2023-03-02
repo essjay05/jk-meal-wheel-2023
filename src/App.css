@@ -1,1 +1,17 @@
 @import './index.css';
+
+.page-descriptor {
+  width: 100%;
+}
+
+.page-title-text {
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .page-title-text {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }
+}
