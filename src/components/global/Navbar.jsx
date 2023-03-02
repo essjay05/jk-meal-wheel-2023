@@ -8,10 +8,8 @@ const NavBar = ({ activeAdditionalFeatures }) => {
     <header>
       <nav>
         <div className='logo-container'>
-          <Link to='/' className='logo-container-link'>
-            <LocalDiningRoundedIcon className='logo' alt='JK Food Wheel Logo' />
-            <span className='logo-text title-style-5'>JK Food Wheel</span>
-          </Link>
+          <LocalDiningRoundedIcon className='logo' alt='JK Food Wheel Logo' />
+          <span className='logo-text title-style-5'>JK Food Wheel</span>
         </div>
         {activeAdditionalFeatures ?
           <ul>
