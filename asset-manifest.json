@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jk-meal-wheel-2023/static/css/main.a5225e86.css",
+    "main.js": "/jk-meal-wheel-2023/static/js/main.ff3f4f8e.js",
+    "index.html": "/jk-meal-wheel-2023/index.html",
+    "main.a5225e86.css.map": "/jk-meal-wheel-2023/static/css/main.a5225e86.css.map",
+    "main.ff3f4f8e.js.map": "/jk-meal-wheel-2023/static/js/main.ff3f4f8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5225e86.css",
+    "static/js/main.ff3f4f8e.js"
+  ]
+}
