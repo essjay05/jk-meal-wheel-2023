@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { /*useEffect,*/ useState } from 'react'
 
 import './Spinner.css'
 
@@ -29,27 +29,27 @@ const Spinner = () => {
       // alert(`After ${spinTime}, the wheel has chosen ${sliceValue}!`)
       // setActive(!active)
     }, spinTime)
-    console.log(`spinTime: ${spinTime}`)
+    // console.log(`spinTime: ${spinTime}`)
   }
 
   // check overlap helper function
-  const isOverlapping = (point, slice) => {
-    // const objOne=pointA,
-    //   objTwo=pointB
-    //   offsetOne = objOne.offset(),
-    //   offsetTwo = objTwo.offset(),
-    //   topOne=offsetOne.top,
-    //   topTwo=offsetTwo.top,
-    //   leftOne=offsetOne.left,
-    //   leftTwo=offsetTwo.left,
-    //   widthOne = objOne.width(),
-    //   widthTwo = objTwo.width(),
-    //   heightOne = objOne.height(),
-    //   heightTwo = objTwo.height()
-    // const leftTop = leftTwo > leftOne && leftTwo < leftOne+widthOne                  && topTwo > topOne && topTwo < topOne+heightOne,             rightTop = leftTwo+widthTwo > leftOne && leftTwo+widthTwo < leftOne+widthOne                  && topTwo > topOne && topTwo < topOne+heightOne,             leftBottom = leftTwo > leftOne && leftTwo < leftOne+widthOne                  && topTwo+heightTwo > topOne && topTwo+heightTwo < topOne+heightOne,             rightBottom = leftTwo+widthTwo > leftOne && leftTwo+widthTwo < leftOne+widthOne                  && topTwo+heightTwo > topOne && topTwo+heightTwo < topOne+heightOne;
-    // console.log( leftTop || rightTop || leftBottom || rightBottom )
-    // console.log(objOne.o)
-  }
+  // const isOverlapping = (point, slice) => {
+  //   // const objOne=pointA,
+  //   //   objTwo=pointB
+  //   //   offsetOne = objOne.offset(),
+  //   //   offsetTwo = objTwo.offset(),
+  //   //   topOne=offsetOne.top,
+  //   //   topTwo=offsetTwo.top,
+  //   //   leftOne=offsetOne.left,
+  //   //   leftTwo=offsetTwo.left,
+  //   //   widthOne = objOne.width(),
+  //   //   widthTwo = objTwo.width(),
+  //   //   heightOne = objOne.height(),
+  //   //   heightTwo = objTwo.height()
+  //   // const leftTop = leftTwo > leftOne && leftTwo < leftOne+widthOne                  && topTwo > topOne && topTwo < topOne+heightOne,             rightTop = leftTwo+widthTwo > leftOne && leftTwo+widthTwo < leftOne+widthOne                  && topTwo > topOne && topTwo < topOne+heightOne,             leftBottom = leftTwo > leftOne && leftTwo < leftOne+widthOne                  && topTwo+heightTwo > topOne && topTwo+heightTwo < topOne+heightOne,             rightBottom = leftTwo+widthTwo > leftOne && leftTwo+widthTwo < leftOne+widthOne                  && topTwo+heightTwo > topOne && topTwo+heightTwo < topOne+heightOne;
+  //   // console.log( leftTop || rightTop || leftBottom || rightBottom )
+  //   // console.log(objOne.o)
+  // }
 
   // let screenLog = document.querySelector('.spinner-section');
   
@@ -65,7 +65,7 @@ const Spinner = () => {
 
   const getCoordinates = (obj) => {
     const coords = obj.getBoundingClientRect()
-    console.log(coords)
+    // console.log(coords)
     return coords
   }
 
@@ -106,12 +106,12 @@ const Spinner = () => {
     '#A3CB38'
   ]
 
-  useEffect(() => {
-    console.log('foodList')
-    console.log(foodList)
-    // document.addEventListener('click', logKey);
-    // console.log(`arrow coordinates: ${arrowCoords}`)
-  }, [])
+  // useEffect(() => {
+  //   console.log('foodList')
+  //   console.log(foodList)
+  //   // document.addEventListener('click', logKey);
+  //   // console.log(`arrow coordinates: ${arrowCoords}`)
+  // }, [])
 
   return (
     <div className='spinner-section'>
