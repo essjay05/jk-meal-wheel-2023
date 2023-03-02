@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Creating an updated version of JK's React Food Wheel / Getting started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Goal:
+
+To create JK Food wheel using react and add additional features:
+-Ability for users to click on a wheel slice and be taken to a list of places nearby associated with that food category (using Google Places API).
+-Ability for users to customize the wheel food categories using a form. Debating whether to use checkboxes or text inputs for this feature.
+-Debating on whether user's customized form should be saved and persisted using localstorage or redux.
 
 ## Available Scripts
 
