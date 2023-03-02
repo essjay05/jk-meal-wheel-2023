@@ -1,1 +1,146 @@
-@import '../../index.css';
+.spinner-section {
+  margin: 4.5rem auto 2.5rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.spinner-container {
+  position: relative;
+  width: 31.25rem;
+  height: 31.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-container .spin-btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.1em;
+  border: 4px solid rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s ease-in-out;
+}
+
+.spinner-container .spin-btn:focus,
+.spinner-container .spin-btn:focus-visible {
+  outline: 5px auto var(--yellow-color);
+  border-color: var(--yellow-color);
+  text-decoration: underline 2px var(--black-color);
+}
+
+/* .spinner-container .spin-btn::before {
+  content: '';
+  position: absolute;
+  bottom: -17rem;
+  width: 3rem;
+  height: 5rem;
+  border-radius: 50%;
+  z-index: 9;
+  background: var(--dark-grey-color);
+  clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+} */
+
+.spinner-container .arrow {
+  content: '';
+  position: absolute;
+  top: -3rem;
+  width: 3rem;
+  height: 5rem;
+  border-radius: 50%;
+  z-index: 9;
+  background: var(--dark-grey-color);
+  clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+  transform: rotate(180deg);
+}
+
+.spinner-container .wheel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #444;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 5px #333, 0 0 0 15px #fff, 0 0 0 18px #111;
+  transition: 5s ease-in-out;
+}
+
+.spinner-container .wheel .active,
+.spinner-container .wheel .active .wheel-slice-btn {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.spinner-container .wheel .active:focus .wheel-slice-btn,
+.spinner-container .wheel .active:focus-visible .wheel-slice-btn {
+  outline: 5px auto var(--yellow-color);
+  border-color: var(--black-color);
+  text-decoration: 3px underline var(--black-color);
+}
+
+.spinner-container .wheel .disabled {
+  cursor: none;
+  pointer-events: none;
+}
+
+.spinner-container .wheel .wheel-slice-btn {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transform-origin: bottom right;
+  transition: 0.3s ease-in-out;
+  transform: rotate(calc(var(--pieSliceDeg) * var(--i)));
+  clip-path: polygon(
+    0 0,
+    45.5% 0,
+    100% 100%,
+    0 45.5%
+  ); /*figure out calculations for dynamic number of pie slices for percentages*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.spinner-container .wheel .wheel-slice-btn .wheel-slice-btn-text {
+  position: relative;
+  transform: rotate(40deg);
+  padding-top: 0.5rem;
+  padding-left: 1.1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 450px) {
+  .spinner-container {
+    width: 20.5rem;
+    height: 20.5rem;
+  }
+
+  .spinner-container .wheel .wheel-slice-btn .wheel-slice-btn-text {
+    font-size: 0.95rem;
+    padding-top: 10px;
+    padding-left: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+}
