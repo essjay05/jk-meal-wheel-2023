@@ -3,7 +3,14 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
+import TagManager from 'react-gtm-module';
 // import reportWebVitals from './reportWebVitals';
+
+const tagManagerArgs = {
+  gtmId: 'G-LMW0EQCPG6'
+}
+
+TagManager.initialize(tagManagerArgs)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
