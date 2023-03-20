@@ -8,7 +8,7 @@ const Footer = ({ activeAdditionalFeatures }) => {
 
   // Contact Info
   const joyOatWebsite = 'https://www.joyserquina.com'
-  const joyGithub = 'https://www.github.com/essjay05'
+  const projectGithub = 'https://github.com/essjay05/food-wheel-selector-react'
   const joyLinkedIn = 'https://www.linkedin.com/in/joy-serquina'
 
 
@@ -18,7 +18,7 @@ const Footer = ({ activeAdditionalFeatures }) => {
         <p className='copyright title-style-6'>&copy; Joy of All Trades LLC 2023</p>
         <ul>
           <li><span className='title-style-6'><a href={joyOatWebsite} target='_blank' rel='noreferrer' name={`Joy's Portfolio Site`}>www.joyserquina.com</a></span></li>
-          <li><span className='title-style-6'><a href={joyGithub} target='_blank' rel='noreferrer' name={`Joy's Github`}>Github</a></span></li>
+          <li><span className='title-style-6'><a href={projectGithub} target='_blank' rel='noreferrer' name={`Joy's Github`}>Github</a></span></li>
           <li><span className='title-style-6'><a href={joyLinkedIn} target='_blank' rel='noreferrer' name={`Joy's LinkedIn`}>LinkedIn</a></span></li>
         </ul>
       </div>
