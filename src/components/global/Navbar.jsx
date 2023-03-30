@@ -9,8 +9,8 @@ const NavBar = ({ activeAdditionalFeatures }) => {
       <nav>
         <div className='logo-container'>
           <Link to='/jk-meal-wheel-2023/' className='logo-container-link'>
-            <LocalDiningRoundedIcon className='logo' alt='JK Food Wheel Logo' />
-            <span className='logo-text title-style-5'>JK Food Wheel</span>
+            <LocalDiningRoundedIcon className='logo' alt='Meal Wheel Logo' />
+            <span className='logo-text title-style-5'>Meal Wheel</span>
           </Link>
         </div>
         {activeAdditionalFeatures ?

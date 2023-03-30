@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Goal:
 
-To create JK Food wheel using react and add additional features:
+To create Meal Wheel using react and add additional features:
 -Ability for users to click on a wheel slice and be taken to a list of places nearby associated with that food category (using Google Places API).
 -Ability for users to customize the wheel food categories using a form. Debating whether to use checkboxes or text inputs for this feature.
 -Debating on whether user's customized form should be saved and persisted using localstorage or redux.
