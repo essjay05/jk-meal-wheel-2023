@@ -13,7 +13,7 @@ import { FoodPlaces } from './pages/FoodPlaces'
 
 const App = () => {
 
-  const appTitleLead = 'JK Food Wheel'
+  const appTitleLead = 'Meal Wheel'
 
   const activeAdditionalFeatures = false
 
